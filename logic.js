@@ -20,8 +20,7 @@
     otherwise return "red";
 */
 function getColor(number) {
-  // Uncomment and complete
-  return /* ( Your code Here ) ?  Your code Here  :  Your code Here */;
+  return number > 10 ? "blue" : "red";
 }
 
 /* 
@@ -45,12 +44,20 @@ console.log(getColor(10) === "red");
     Complete the following function using if statements.
 
     If the brightness is zero, return "off"
-    otherwise if the brightness is greater than zero but less that 200, return "dimmed"
+    otherwise if the brightness is greater than zero but less than 200, return "dimmed"
     if the brightness is greater than or equal to 200, then return "on"
 */
 function lightStatus(brightness) {
-  let result = "";
-  // Put your logic here
+  let result = brightness;
+
+  if (brightness == 0) {
+    result = "off";
+  } else if (brightness > 0 && brightness < 200) {
+    result = "dimmed";
+  } else if (brightness >= 200) {
+    result = "on";
+  }
+
   return result;
 }
 
@@ -87,15 +94,32 @@ console.log(lightStatus(255) === "on");
 */
 
 function getLightBulbStatusDisplayString(status) {
-  let result = "";
-  /* uncomment and complete
-    switch( your code here ) {
-      case "your code here": 
-        your code here;
-        break;
-      etc...
-    }
-    */
+  let result = status;
+
+  switch (status) {
+    case "on":
+      break;
+    // case "off":
+    //   // wjhwh;
+    //   break;
+    // case "dimmed":
+    //   // ;
+    //   break;
+    // case "offline":
+    //   //;
+    //   break;
+    // case "deleted":
+    //   //;
+    //   break;
+    // case "missing":
+    //   //;
+    //   break;
+    // case "broken":
+    //   //;
+    //   break;
+    // default:
+  }
+
   return result;
 }
 
